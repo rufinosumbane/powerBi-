@@ -1,0 +1,57 @@
+# powerBi-
+Trabalhos de Power BI 
+
+Processos de Construção do Star Schema – F_Vendas 
+
+Table D_Desconto
+
+Passos
+1.	Removida as colunas Segment, Country, Units Sold, Manufacturing Price, Sale Price, Gross sales, sales, Cogs, Profit, Date, Month Number, Month Name, Year. 
+2.	Adicionada a coluna condicional, com o nome ID_produto, com os seguintes critérios: 
+3.	Removida a linhas duplicas das colunas ID_Produto, Discount, Discounts
+
+
+Table D_Produto
+Passos
+1.	Removida as colunas Segment, Country, Price, Gross sales, sales, Cogs, Profit, Date, Month Number, Month Name, Year.
+2.	Adicionada a coluna de indice 
+3.	Efectuado o agrupamento avançado por colunas, para obter a soma de Units Sold, Mínimo de Sale Price, Máximo de Sale Price, Media de Sale Price, Mediana de Sale Price, Mediana Manufacturing Price.  
+	
+
+
+Table F_vendas
+
+Passos 
+1.	Removida as colunas Manufacturing 
+2.	Introduzida a coluna de indice a partir de 0
+Table D_Categoria
+Passos
+1.	Removida as colunas Product, Discount Band, Units Sold, Manufacturing Price, Sale Price, Gross sales, Discounts, Sales, Cogs, Profit, Date, Month Number, Month Name, Year. 
+2.	Removidas as linhas duplicadas. 
+3.	Introduzida a coluna de indice a partir de 0
+
+Table D_Produtos_Detalhes
+
+Passos 
+1.	Removida as colunas Segment, Country, Gross Sales, Discount, Sales, Cogs, Profit, Date, Month Number, Month Name, Year 
+2.	Criar uma coluna de Indice a partir de 0
+
+
+Table D_Detalhes 
+Passos 
+1.	Removida as colunas Country, Discount Band, Segment, Units Sold, Manufacturing Price, Date, Month Number e Year. 
+2.	Criado ID_Produto, através da coluna condicional/ Replace Values 
+
+DAX – DATA 
+
+1.Usada a função list. Dates para criação da Data a partir de 1/1/2013 até 31/12/2014
+2.Conversão para tabela. 
+3.Definido o tipo de dado para Data.
+4.Adicionada colunas de dia, day Name, Mês, Month Name, Trimestre e ano.  
+
+
+
+Star Schema
+
+
+
